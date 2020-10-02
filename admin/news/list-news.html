@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Danh sách thành viên</title>
+  <title>Danh sách bài viết</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -170,7 +170,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0 text-dark">Danh sách thành viên</h1>
+              <h1 class="m-0 text-dark">Danh sách bài viết</h1>
             </div>
           </div>
 
@@ -180,12 +180,11 @@
                 <thead>
                   <tr>
                     <th>Stt</th>
-                    <th>Họ và tên</th>
-                    <th>Email</th>
-                    <th>Số điện thoại</th>
-                    <th>Địa chỉ</th>
-                    <th>Ngày tạo</th>
-                    <th>tuổi</th>
+                    <th>Tiêu đề</th>
+                    <th>Ngày viết</th>
+                    <th>Người viết</th>
+                    <th>Thứ tự</th>
+                    <th>Hiển thị</th>
                     <th>#</th>
                   </tr>
                 </thead>
@@ -198,10 +197,13 @@
                     <td>Win 95+</td>
                     <td> 4</td>
                     <td>r</td>
-                    <td> 4</td>
-                    <td>22</td>
                     <td>
-                      <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                    </td>
+                    <td>
+                      <a href="/admin/news/news-detail.html" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
                       </a>
                       <a data-toggle="modal" data-target="#delete" title="Xóa thành viên">
@@ -217,8 +219,11 @@
                     <td>Win 95+</td>
                     <td>5</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -236,8 +241,11 @@
                     <td>Win 95+</td>
                     <td>5.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -255,8 +263,11 @@
                     <td>Win 98+</td>
                     <td>6</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -274,8 +285,11 @@
                     <td>Win XP SP2+</td>
                     <td>7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -293,8 +307,11 @@
                     <td>Win XP</td>
                     <td>6</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -312,8 +329,11 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -331,8 +351,11 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -350,8 +373,11 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -369,8 +395,11 @@
                     <td>Win 2k+ / OSX.3+</td>
                     <td>1.9</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -388,8 +417,11 @@
                     <td>OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -407,8 +439,11 @@
                     <td>OSX.3+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -426,8 +461,11 @@
                     <td>Win 95+ / Mac OS 8.6-9.2</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -445,8 +483,11 @@
                     <td>Win 98SE+</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -464,8 +505,11 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -483,8 +527,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -502,8 +549,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -521,8 +571,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.2</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -540,8 +593,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.3</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -559,8 +615,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.4</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -578,8 +637,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -597,8 +659,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.6</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -616,8 +681,11 @@
                     <td>Win 98+ / OSX.1+</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -635,8 +703,11 @@
                     <td>Win 98+ / OSX.1+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -654,8 +725,11 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -673,8 +747,11 @@
                     <td>Gnome</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -692,8 +769,11 @@
                     <td>OSX.3</td>
                     <td>125.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -711,8 +791,11 @@
                     <td>OSX.3</td>
                     <td>312.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -730,8 +813,11 @@
                     <td>OSX.4+</td>
                     <td>419.3</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -749,8 +835,11 @@
                     <td>OSX.4+</td>
                     <td>522.1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -768,8 +857,11 @@
                     <td>OSX.4+</td>
                     <td>420</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -787,8 +879,11 @@
                     <td>iPod</td>
                     <td>420.1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -806,8 +901,11 @@
                     <td>S60</td>
                     <td>413</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -825,8 +923,11 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -844,8 +945,11 @@
                     <td>Win 95+ / OSX.2+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -863,8 +967,11 @@
                     <td>Win 95+ / OSX.2+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -882,8 +989,11 @@
                     <td>Win 95+ / OSX.2+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -901,8 +1011,11 @@
                     <td>Win 95+ / OSX.3+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -918,8 +1031,11 @@
                     <td>Win 88+ / OSX.3+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -935,8 +1051,11 @@
                     <td>Win 88+ / OSX.3+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -952,8 +1071,11 @@
                     <td>Wii</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -969,8 +1091,11 @@
                     <td>N800</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -986,8 +1111,11 @@
                     <td>Nintendo DS</td>
                     <td>8.5</td>
                     <td>C/A<sup>1</sup></td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1003,8 +1131,11 @@
                     <td>KDE 3.1</td>
                     <td>3.1</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1020,8 +1151,11 @@
                     <td>KDE 3.3</td>
                     <td>3.3</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1037,8 +1171,11 @@
                     <td>KDE 3.5</td>
                     <td>3.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1054,8 +1191,11 @@
                     <td>Mac OS 8-9</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1071,8 +1211,11 @@
                     <td>Mac OS 7.6-9</td>
                     <td>1</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1088,8 +1231,11 @@
                     <td>Mac OS 8-X</td>
                     <td>1</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1105,8 +1251,11 @@
                     <td>Embedded devices</td>
                     <td>-</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1122,8 +1271,11 @@
                     <td>Embedded devices</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1139,8 +1291,11 @@
                     <td>Embedded devices</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1156,8 +1311,11 @@
                     <td>Text only</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1173,8 +1331,11 @@
                     <td>Text only</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1190,8 +1351,11 @@
                     <td>Windows Mobile 6</td>
                     <td>-</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1207,8 +1371,11 @@
                     <td>PSP</td>
                     <td>-</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1224,8 +1391,11 @@
                     <td>-</td>
                     <td>-</td>
                     <td>U</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
+                            <i class="check fa fa-check"></i>
+                        </a>
+                    </td>
                     <td>
                       <a data-toggle="modal" data-target="#user" title="Chỉnh sửa">
                         <i class="check fa fa-edit"></i>
@@ -1239,12 +1409,11 @@
                 <tfoot>
                   <tr>
                     <th>Stt</th>
-                    <th>Họ và tên</th>
-                    <th>Email</th>
-                    <th>Số điện thoại</th>
-                    <th>Địa chỉ</th>
-                    <th>Ngày tạo</th>
-                    <th>tuổi</th>
+                    <th>Tiêu đề</th>
+                    <th>Ngày viết</th>
+                    <th>Người viết</th>
+                    <th>Thứ tự</th>
+                    <th>Hiển thị</th>
                     <th>#</th>
                   </tr>
                 </tfoot>
@@ -1258,70 +1427,49 @@
     <!-- /Content -->
   </div>
 
-  <!-- Modal user -->
-  <div class="modal fade user-detail" id="user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Modal Confirm -->
+    <div class="modal fade user-detail" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Thông tin thành viên</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Hiển thị bài viết</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <div class="name">
-            <div class="title">
-              Họ và tên:
+            <div class="sumary">
+                Bạn có chắc chắn muốn hiển thị bài viết?
             </div>
-            <div class="form-input">
-              <input type="text" value="Lê Chí Tú">
-            </div>
-          </div>
-          <div class="email">
-            <div class="title">
-              Email:
-            </div>
-            <div class="form-input">
-              <input type="text" value="abc@gmail.com" disabled>
-            </div>
-          </div>
-          <div class="password">
-            <div class="title">
-              Nhập mật khẩu mới:
-            </div>
-            <div class="form-input">
-              <input type="password">
-            </div>
-          </div>
-          <div class="phone">
-            <div class="title">
-              Số điện thoại:
-            </div>
-            <div class="form-input">
-              <input type="number" value="01686432321" disabled>
-            </div>
-          </div>
-          <div class="address">
-            <div class="title">
-              Địa chỉ:
-            </div>
-            <div class="form-input">
-              <input type="text" value="Đà Nẵng">
-            </div>
-          </div>
-          <div class="age">
-            <div class="title">
-              Tuổi:
-            </div>
-            <div class="form-input">
-              <input type="number" value="22">
-            </div>
-          </div>
         </div>
         <div class="modal-footer">
-          <a data-dismiss="modal">Đóng</a>
-          <input type="submit" value="Lưu thay đổi">
+          <a data-dismiss="modal">Hủy bỏ</a>
+          <input type="submit" value="Xác nhận">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal unConfirm -->
+    <div class="modal fade user-detail" id="unConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Không hiển thị bài viết</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="sumary">
+                Bạn có chắc chắn muốn tắt hiển thị bài viết?
+            </div>
+        </div>
+        <div class="modal-footer">
+          <a data-dismiss="modal">Hủy bỏ</a>
+          <input type="submit" value="Xác nhận">
         </div>
       </div>
     </div>
@@ -1333,16 +1481,16 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Xóa thành viên</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Xóa bài viết</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          Bạn có chắc chắn muốn xóa thành viên?
+          Bạn có chắc chắn muốn xóa bài viết?
         </div>
         <div class="modal-footer">
-          <a data-dismiss="modal">Hủy</a>
+          <a data-dismiss="modal">Hủy bỏ</a>
           <input type="submit" value="Xác nhận">
         </div>
       </div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Danh sách học viên</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -59,86 +59,110 @@
     <!-- /Header -->
 
     <!-- Menu left -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
-      <a href="index.html" class="brand-link">
-        <img src="/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
-        <span class="brand-text font-weight-light">Admin Unistar</span>
-      </a>
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Admin Unistar</span>
+    </a>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-          </div>
-          <div class="info">
-            <a href="#" class="d-block">Lê Chí Tú</a>
-          </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
+        <div class="info">
+          <a href="#" class="d-block">Lê Chí Tú</a>
+        </div>
+      </div>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <!-- Add icons to the links using the .nav-icon class
-                   with font-awesome or any other icon font library -->
-    
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-edit"></i>
-                  <p>
-                    Quản lý thành viên
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Quản lý thành viên
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/user/list-user.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách thành viên</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="/admin/user/list-user.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Danh sách thành viên</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/admin/user/add-user.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Thêm thành viên</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
-    
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-edit"></i>
-                  <p>
-                    Quản lý học viên
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
+              <li class="nav-item">
+                <a href="/admin/user/add-user.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm thành viên</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="/admin/student/list-student.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Danh sách học viên</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/admin/user/add-user.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Thêm thành viên</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
-          </nav>
-        <!-- /.sidebar-menu -->
-      </div>
-      <!-- /.sidebar -->
-    </aside>
-    <!-- /Menu left -->
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Quản lý học viên
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/student/list-student.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách học viên</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/student/add-student.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm học viên</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Quản lý bài viết
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/news/list-news.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách bài viết</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/news/add-news.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm bài viết</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- /Menu left -->
 
     <!-- Content -->
     <div class="content-wrapper student">
@@ -172,9 +196,9 @@
                       </a>
                     </td>
                     <td>Win 95+</td>
-                    <td> 4</td>
+                    <td> 0546465456</td>
                     <td>X</td>
-                    <td> 4</td>
+                    <td> 22</td>
                     <td>
                         <a data-toggle="modal" data-target="#confirm" title="Xác nhận">
                             <i class="check fa fa-check"></i>
@@ -193,7 +217,7 @@
                     <td>Win 95+</td>
                     <td>5</td>
                     <td>C</td>
-                    <td> 4</td>
+                    <td>22</td>
                     <td>
                         <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
                             <i class="check fa fa-check" style="opacity: 0.2;"></i>
@@ -212,8 +236,15 @@
                     <td>Win 95+</td>
                     <td>5.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>4</td>
@@ -224,8 +255,15 @@
                     <td>Win 98+</td>
                     <td>6</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>5</td>
@@ -236,8 +274,15 @@
                     <td>Win XP SP2+</td>
                     <td>7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>6</td>
@@ -248,8 +293,15 @@
                     <td>Win XP</td>
                     <td>6</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>7</td>
@@ -260,8 +312,15 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>8</td>
@@ -272,8 +331,15 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>9</td>
@@ -284,8 +350,15 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>10</td>
@@ -296,8 +369,15 @@
                     <td>Win 2k+ / OSX.3+</td>
                     <td>1.9</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>11</td>
@@ -308,8 +388,15 @@
                     <td>OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>12</td>
@@ -320,8 +407,15 @@
                     <td>OSX.3+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>13</td>
@@ -332,8 +426,15 @@
                     <td>Win 95+ / Mac OS 8.6-9.2</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>14</td>
@@ -344,8 +445,15 @@
                     <td>Win 98SE+</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -356,8 +464,15 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -368,8 +483,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>9</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -380,8 +502,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -392,8 +521,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.2</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -404,8 +540,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.3</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -416,8 +559,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.4</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -428,8 +578,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -440,8 +597,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>1.6</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -452,8 +616,15 @@
                     <td>Win 98+ / OSX.1+</td>
                     <td>1.7</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -464,8 +635,15 @@
                     <td>Win 98+ / OSX.1+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Gecko</td>
@@ -476,8 +654,15 @@
                     <td>Win 98+ / OSX.2+</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>4</td>
@@ -488,8 +673,15 @@
                     <td>Gnome</td>
                     <td>1.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>8</td>
@@ -500,8 +692,15 @@
                     <td>OSX.3</td>
                     <td>125.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>9</td>
@@ -512,8 +711,15 @@
                     <td>OSX.3</td>
                     <td>312.8</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>32</td>
@@ -524,8 +730,15 @@
                     <td>OSX.4+</td>
                     <td>419.3</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>8</td>
@@ -536,8 +749,15 @@
                     <td>OSX.4+</td>
                     <td>522.1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>5</td>
@@ -548,8 +768,15 @@
                     <td>OSX.4+</td>
                     <td>420</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>6</td>
@@ -560,8 +787,15 @@
                     <td>iPod</td>
                     <td>420.1</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>3</td>
@@ -572,8 +806,15 @@
                     <td>S60</td>
                     <td>413</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>9</td>
@@ -584,8 +825,15 @@
                     <td>Win 95+ / OSX.1+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>7</td>
@@ -596,8 +844,15 @@
                     <td>Win 95+ / OSX.2+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -608,8 +863,15 @@
                     <td>Win 95+ / OSX.2+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>3</td>
@@ -620,8 +882,15 @@
                     <td>Win 95+ / OSX.2+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>4</td>
@@ -632,8 +901,15 @@
                     <td>Win 95+ / OSX.3+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Presto</td>
@@ -641,8 +917,15 @@
                     <td>Win 88+ / OSX.3+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Presto</td>
@@ -650,8 +933,15 @@
                     <td>Win 88+ / OSX.3+</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Presto</td>
@@ -659,8 +949,15 @@
                     <td>Wii</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Presto</td>
@@ -668,8 +965,15 @@
                     <td>N800</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Presto</td>
@@ -677,8 +981,15 @@
                     <td>Nintendo DS</td>
                     <td>8.5</td>
                     <td>C/A<sup>1</sup></td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>KHTML</td>
@@ -686,8 +997,15 @@
                     <td>KDE 3.1</td>
                     <td>3.1</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>KHTML</td>
@@ -695,8 +1013,15 @@
                     <td>KDE 3.3</td>
                     <td>3.3</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>KHTML</td>
@@ -704,8 +1029,15 @@
                     <td>KDE 3.5</td>
                     <td>3.5</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Tasman</td>
@@ -713,8 +1045,15 @@
                     <td>Mac OS 8-9</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Tasman</td>
@@ -722,8 +1061,15 @@
                     <td>Mac OS 7.6-9</td>
                     <td>9</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Tasman</td>
@@ -731,8 +1077,15 @@
                     <td>Mac OS 8-X</td>
                     <td>3</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -740,8 +1093,15 @@
                     <td>Embedded devices</td>
                     <td>-</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -749,8 +1109,15 @@
                     <td>Embedded devices</td>
                     <td>-</td>
                     <td>A</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -758,8 +1125,15 @@
                     <td>Embedded devices</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -767,8 +1141,15 @@
                     <td>Text only</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -776,8 +1157,15 @@
                     <td>Text only</td>
                     <td>-</td>
                     <td>X</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -785,8 +1173,15 @@
                     <td>Windows Mobile 6</td>
                     <td>-</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Misc</td>
@@ -794,8 +1189,15 @@
                     <td>PSP</td>
                     <td>-</td>
                     <td>C</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                   <tr>
                     <td>Other browsers</td>
@@ -803,8 +1205,15 @@
                     <td>-</td>
                     <td>-</td>
                     <td>U</td>
-                    <td> 4</td>
-                    <td>X</td>
+                    <td>22</td>
+                    <td>
+                        <a data-toggle="modal" data-target="#unConfirm" title="Hủy xác nhận">
+                            <i class="check fa fa-check" style="opacity: 0.2;"></i>
+                        </a>
+                        <a data-toggle="modal" data-target="#delete" title="Xóa học viên">
+                            <i class="delete fa fa-trash"></i>
+                        </a>
+                    </td>
                   </tr>
                 </tbody>
                 <tfoot>

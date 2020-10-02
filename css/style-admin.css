@@ -1,4 +1,4 @@
-/* Start====================user========================== */
+/* Start====================list-user========================== */
 .user .card-body .name {
     cursor: pointer;
 }
@@ -7,7 +7,13 @@
     color: #000;
     font-weight: 500;
 }
-/* End======================user========================== */
+
+.user .card-body a {
+    padding-right: 5px;
+    cursor: pointer;
+    color: #000;
+}
+/* End======================list-user========================== */
 
 /* Start====================user-detail========================== */
 .user-detail .title {
@@ -87,6 +93,18 @@
 
 .add-user .button-add input:hover {
     background: #000;
+}
+
+.add-user .form-option select {
+    width: 100%;
+    display: inline-block;
+    height: calc(1.8125rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    border: 1px solid #ced4da;
+    color: #495057;
 }
 /* End========================add-user========================== */
 
